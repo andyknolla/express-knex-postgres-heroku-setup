@@ -15,8 +15,9 @@
 # Steps on how I setup this CRUD project
 
 ##### Create Express App
-- `express --hbs name_of_app` creates new express app in a directory called name_of_app
+- `express --hbs --git name_of_app` creates new express app in a directory called name_of_app
   * `--hbs` adds handlebars
+  * '--git' adds a gitignore file
   * assumes you have [express-generator](https://www.npmjs.com/package/express-generator) package installed globally (`npm install -g express-generator`)
 - `cd name_of_app && npm i`
   * `npm i` installs all dependencies denoted by package.json
