@@ -40,10 +40,13 @@
   * Why? Because we are going to set the `DATABASE_URL` variable equal to our heroku URL, which contains a password that we don't want others to see
 
 ##### Set Up Heroku App & Database
+- `** make sure a git reop has been intialized before doing anything w/ heroku`
 - `createdb name_of_app` creates psql database locally
 - `heroku apps:create name_of_app` creates a heroku app
 - `heroku addons:create heroku-postgresql --app name_of_app` adds postgresql database to the app
+- `** if adding db on heroku.com...find "heroku postgresql" under "data-stores"
 - `heroku config` returns the URL
+- `** if using heroku.com... find db url under <settings>, <config variables>, "config vars"
   * add URL to .env file `DATABASE_URL=yourURL?ssl=true`
 - In root directory, add a folder called 'db' & create 'knex.js' inside it
   * refer to 'db/knex.js' in this repo for how to define your environment configurations
