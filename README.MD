@@ -64,3 +64,4 @@ If deploying to heroku,
 - `knex migrate:latest --env production` runs knex migration locally against heroku database in the cloud
 - `knex seed:run --env production` runs knex locally & puts seed data in heroku database
 - `git push heroku master` to push to heroku :tada::balloon::confetti_ball:
+- `heroku pg:psql --app name_of_app database_url` logs into psql on heroku, so you can check out your tables etc.
